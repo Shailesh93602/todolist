@@ -182,20 +182,36 @@ body {
     color: #333;
   }
   
-  /* Basic Style */
-@media (max-width: 600px) {
+/* Basic Style */
+
+/* Mobile Devices */
+@media (max-width: 599px) {
   .container {
     width: 90%;
   }
   
   input#new-task,
-  input#task-search {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
+  input#task-search,
   ul li input[type="text"] {
     width: 100%;
     box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .container {
+    width: 70%;
+  }
+  
+  input#new-task,
+  input#task-search,
+  ul li input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px;
   }
 }
