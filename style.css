@@ -182,3 +182,20 @@ body {
     color: #333;
   }
   
+  /* Basic Style */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  
+  input#new-task,
+  input#task-search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  ul li input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
